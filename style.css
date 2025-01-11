@@ -1,0 +1,477 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: white;
+    background-color: black;
+}
+
+/* Navigation Bar */
+header {
+    background-color: black;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: #00ff00; /* Green font color */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #fff; /* Change to white on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: black;
+    color: green;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #00ff00;
+    text-shadow: 0px 0px 15px rgba(0, 255, 0, 0.7);
+}
+
+.animated-text {
+    font-size: 1.5rem;
+    color: #00ff00;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.6);
+}
+
+/* Right Content Styling */
+.right-content {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    text-align: right;
+}
+
+/* Hire Me Button */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #00ff00;
+    transform: scale(1.1);
+}
+
+/* Social Media Icons */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    color: #00ff00;
+    font-size: 2.5rem; /* Increased icon size */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: scale(1.3);
+}
+
+/* Section Divider Line */
+.section-divider {
+    width: 100px;
+    height: 3px;
+    background-color: #00ff00;
+    margin: 2rem auto; /* Center alignment */
+    border-radius: 1.5px;
+    margin-top: 3rem; /* Added space before the green line */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 2rem;
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.detail-title {
+    color: #00ff00;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.detail-info {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.description {
+    color: #333;
+    font-size: 1.1rem;
+    max-width: 800px;
+    text-align: justify;
+    margin-top: 2rem;
+    font-weight: 300;
+}
+
+/* Education Section */
+.education {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: black; /* Updated to black background */
+}
+
+.education h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.education-box {
+    background-color: #222;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+    padding: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-box h2 {
+    font-size: 1.8rem;
+    color: white; /* Changed title color to white but not bright white */
+    margin-bottom: 1rem;
+}
+
+.education-detail {
+    font-size: 1.3rem;
+    color: #00ff00; /* Green color for detail text */
+    margin-bottom: 0.5rem;
+}
+
+
+.education-box p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Ensure there's space between boxes */
+.education-box + .education-box {
+    margin-top: 3rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .education-box {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    .education h1 {
+        font-size: 2.5rem;
+    }
+    .education-box h2 {
+        font-size: 1.6rem;
+    }
+    .education-detail {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Skills Section */
+.skills {
+    padding: 4rem 2rem;
+    background-color: black; /* Keep the background black */
+    color: white;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #00ff00;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Spaced out skills a bit more */
+    align-items: center;
+}
+
+/* Individual Skill Item */
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 60%; /* Adjust width for a centered view */
+    margin: 0 auto;
+}
+
+/* Skill Title */
+.skill-title h2 {
+    font-size: 1.5rem;
+    color: #dcdcdc; /* Subtle off-white color */
+    margin-bottom: 0.5rem;
+}
+
+/* Skill Bar Container */
+.skill-bar {
+    height: 12px;
+    background-color: #222;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Wider bar for a more visually appealing look */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.6); /* Purple shadow effect */
+}
+
+.skill-bar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: purple; /* Change to purple */
+    width: 0;
+    border-radius: 5px;
+    animation: progress-bar 4s forwards; /* Slower animation */
+}
+
+/* Percentage Text */
+.percentage {
+    position: absolute;
+    right: 0;
+    color: purple;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Progress Bar Animation */
+@keyframes progress-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--percent);
+    }
+}
+
+/* For each skill item set the percentage dynamically */
+.skill .skill-bar {
+    --percent: 0;
+}
+
+.skill:nth-child(1) .skill-bar {
+    --percent: 70%;
+}
+
+.skill:nth-child(2) .skill-bar {
+    --percent: 40%;
+}
+
+.skill:nth-child(3) .skill-bar {
+    --percent: 60%;
+}
+
+.skill:nth-child(4) .skill-bar {
+    --percent: 65%;
+}
+
+.skill:nth-child(5) .skill-bar {
+    --percent: 56%;
+}
+
+.skill:nth-child(6) .skill-bar {
+    --percent: 90%;
+}
+
+/* Adjust layout for professionalism */
+.skill-title {
+    width: 100%;
+}
+
+/* Ensure the percentage is centered properly on mobile */
+.percentage {
+    width: auto;
+    text-align: center;
+}
+
+/* Adjust layout for mobile responsiveness */
+@media (max-width: 768px) {
+    .skills-container {
+        width: 100%;
+    }
+
+    .skill {
+        width: 90%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .skill-title {
+        width: 100%;
+    }
+
+    .percentage {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+
+
+/* Section Divider for Contact */
+.section-divider {
+    width: 100px;
+    height: 3px;
+    background-color: #00ff00;
+    margin: 3rem auto; /* Center alignment with space before and after */
+    border-radius: 1.5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: black; /* Pure black background */
+    color: white;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #00ff00;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Contact Item Styling */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    color: white; /* White text for headings */
+    margin-bottom: 0.5rem;
+}
+
+.contact-item span {
+    display: block;
+    font-size: 1.1rem;
+    color: #888; /* Gray color for content below */
+    margin-bottom: 0.5rem;
+}
+
+/* Icons Styling */
+.contact-item i {
+    font-size: 2rem;
+    color: #00ff00; /* Green color for icons */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item i:hover {
+    color: #fff;
+}
+
+/* LinkedIn Link Styling */
+.linkedin-link {
+    color: #888; /* Gray color for LinkedIn link */
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.linkedin-link:hover {
+    color: white; /* White color on hover */
+}
+
